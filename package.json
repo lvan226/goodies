@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Fls",
+  "author": "Иван Дядюра",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,6 +34,7 @@
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "merge-stream": "^2.0.0",
+    "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   }
 }

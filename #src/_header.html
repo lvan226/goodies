@@ -1,3 +1,56 @@
-<header class="header">
-
+<header class="header wrapper__header">
+	<div class="container">
+		<div class="header__inner">
+			<a class="header__logo" href="index.html">
+				<img class="header__logo-img" src="img/logo.png" alt="Логотип">
+			</a>
+			<div class="header__search">
+				<form class="header__search-form" action="search-form.php" method="POST">
+					<input class="header__search-input" type="search" placeholder="Найдите свой товар в нашем каталоге...">
+					<button class="header__search-btn"></button>
+				</form>
+			</div>
+			<div class="header__links">
+				<div class="header__links-item">
+					<div class="header__links-box">
+						<svg class="header__links-image" viewBox="0 0 26 26">
+							<use xlink:href="img/icons/icons.svg#publications"></use>
+						</svg>
+					</div>
+					<a class="header__links-text" href="#">Публикации</a>
+				</div>
+				<div class="header__links-item">
+					<div class="header__links-box">
+						<svg viewBox="0 0 21 26" class="header__links-image">
+							<use xlink:href="img/icons/icons.svg#help"></use>
+						</svg>
+					</div>
+					<a class="header__links-text" href="#">Помощь</a>
+				</div>
+			</div>
+			<a class="header__basket" href="basket.html">
+				<svg viewBox="0 0 21 26" class="header__basket-image">
+					<use xlink:href="img/icons/icons.svg#shopping-cart"></use>
+				</svg>
+				<div class="header__basket-total">1</div>
+			</a>
+			<div class="header__menu header__menu--active">
+				<button class="header__menu-btn">Авторизация</button>
+				<div class="header__menu-text">Ещё не зарегистрированны?</div>
+				<!-- <div class="header__menu-dropdown">
+					<div class="header__menu-title">Аккаунт</div>
+					<ul class="header__menu-list">
+						<li class="header__menu-item header__menu-item--active"><a href="#" class="header__menu-link">Мой профиль</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">Корзина</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">Личные данные</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">История заказов</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">Избранное</a></li>
+					</ul>
+				</div>
+				<a class="header__menu-user" href="profile.html">
+					<img class="header__menu-avatar" src="img/header-user.png" alt="Аватар пользователя">
+				</a> -->
+			</div>
+		</div>
+	</div>
 </header>

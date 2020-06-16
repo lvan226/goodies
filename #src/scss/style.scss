@@ -7,7 +7,8 @@
 		font-style: #{$style};
 	}
 }
-@import "fonts";
 
-body {
-}
+@import "fonts";
+@import "vars";
+@import "config";
+@import "header";

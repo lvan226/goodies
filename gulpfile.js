@@ -71,6 +71,7 @@ function html() {
 
 function css() {
 	var firstPath = src([
+		"node_modules/normalize.css/normalize.css",
 		"node_modules/slick-carousel/slick/slick.css",
 	])
 	.pipe(concat("libs.min.css"))
