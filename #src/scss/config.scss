@@ -28,7 +28,6 @@ $elg: 1499.98px;
 	}
 	@media (max-width: $xs) {
 		max-width: 100%;
-		padding: 0 15px;
 	}
 }
 // </НАСТРОЙКИ СЕТКИ> =========================================================================================================
@@ -46,10 +45,14 @@ html {
 }
 
 body {
+	position: relative;
+	min-width: 320px;
 	height: 100%;
+	overflow-x: hidden;
+
 	font-family: $default-family;
-	font-weight: 400;
 	line-height: 1.4;
+	font-weight: 400;
 }
 
 img {
