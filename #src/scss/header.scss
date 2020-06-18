@@ -180,7 +180,6 @@
 	&__menu {
 		position: relative;
 
-		align-self: stretch;
 		max-width: 215px;
 		width: 100%;
 		margin-left: 37px;
@@ -192,6 +191,7 @@
 		&--active {
 			display: flex;
 			align-items: center;
+			align-self: stretch;
 
 			text-align: left;
 		}
@@ -265,6 +265,36 @@
 			background-size: cover;
 
 			transition: 0.3s;
+		}
+
+		// .header__menu-dropdown:focus-within
+
+		&:focus-within {
+			// .header__menu-dropdown:focus-within .header__menu-title::before
+
+			.header__menu-title::before {
+				transform: translateY(-60%) rotateX(180deg);
+			}
+
+			// .header__menu-dropdown:focus-within .header__menu-list
+
+			.header__menu-list {
+				max-height: 400px;
+				padding: 5px 10px;
+				// overflow: visible;
+			}
+
+			// .header__menu-dropdown:focus-within::before
+
+			&::before {
+				z-index: 10;
+			}
+
+			// .header__menu-dropdown:focus-within::after
+
+			&::after {
+				height: 55px;
+			}
 		}
 
 		// .header__menu-dropdown:hover

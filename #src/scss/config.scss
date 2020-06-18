@@ -62,7 +62,9 @@ img {
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100%;
+
+	background-color: #E5E5E5;
 
 	// .wrapper__header
 
@@ -83,3 +85,39 @@ img {
 	}
 }
 // </ГЛОБАЛЬНЫЕ ПАРАМЕТРЫ> ====================================================================================================
+
+// <КОНФИГ КЛАССОВ> =======================================
+.visuallyhidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.title-large {
+	margin: 0;
+	padding-bottom: 55px;
+
+	color: #000;
+	font-weight: 500;
+	font-size: 36px;
+}
+
+.title-medium {
+	margin: 0;
+	padding-bottom: 50px;
+
+	color: #000;
+	font-weight: 400;
+	font-size: 30px;
+}
+// </КОНФИГ КЛАССОВ> =======================================

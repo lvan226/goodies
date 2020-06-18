@@ -108,7 +108,11 @@ function css() {
 function js() {
 	var firstPath =  src([
 		'node_modules/babel-polyfill/dist/polyfill.js',
+		'node_modules/focus-within-polyfill/dist/focus-within-polyfill.js',
+		'' + source_folder + '/js/libs.js',
+		'node_modules/slick-carousel/slick/slick.min.js',
 	])
+	.pipe(fileinclude())
 	.pipe(uglify())
 	.pipe(concat("libs.min.js"))
 	.pipe(dest(path.build.js))
@@ -216,7 +220,7 @@ function clean(params) {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;

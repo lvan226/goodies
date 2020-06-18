@@ -6,22 +6,23 @@
 			</a>
 			<div class="header__search">
 				<form class="header__search-form" action="search-form.php" method="POST">
-					<input class="header__search-input" type="search" placeholder="Найдите свой товар в нашем каталоге...">
-					<button class="header__search-btn"></button>
+					<label class="visuallyhidden" for="search-input">Введите данные для поиска</label>
+					<input class="header__search-input" id="search-input" type="search" placeholder="Найдите свой товар в нашем каталоге...">
+					<button class="header__search-btn" aria-label="Поиск"></button>
 				</form>
 			</div>
 			<div class="header__links">
 				<div class="header__links-item">
 					<div class="header__links-box">
-						<svg class="header__links-image" viewBox="0 0 26 26">
-							<use xlink:href="img/icons/icons.svg#publications"></use>
+						<svg  class="header__links-image" viewBox="0 0 26 27" role="img">
+							<use xlink:href="img/icons/icons.svg#public"></use>
 						</svg>
 					</div>
 					<a class="header__links-text" href="#">Публикации</a>
 				</div>
 				<div class="header__links-item">
 					<div class="header__links-box">
-						<svg viewBox="0 0 21 26" class="header__links-image">
+						<svg class="header__links-image" viewBox="0 0 21 26">
 							<use xlink:href="img/icons/icons.svg#help"></use>
 						</svg>
 					</div>
@@ -29,7 +30,7 @@
 				</div>
 			</div>
 			<a class="header__basket" href="basket.html">
-				<svg viewBox="0 0 21 26" class="header__basket-image">
+				<svg class="header__basket-image" viewBox="0 0 52 52">
 					<use xlink:href="img/icons/icons.svg#shopping-cart"></use>
 				</svg>
 				<div class="header__basket-total">1</div>
@@ -37,7 +38,7 @@
 			<div class="header__menu header__menu--active">
 				<!-- <button class="header__menu-btn">Авторизация</button>
 				<div class="header__menu-text">Ещё не зарегистрированны?</div> -->
-				<div class="header__menu-dropdown">
+				<div class="header__menu-dropdown" tabindex="0">
 					<div class="header__menu-title">Аккаунт</div>
 					<ul class="header__menu-list">
 						<li class="header__menu-item header__menu-item--active"><a href="#" class="header__menu-link">Мой профиль</a></li>

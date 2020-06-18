@@ -1,0 +1,1 @@
+@@include('polyfil/svg4everybody.js')

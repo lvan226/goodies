@@ -1,1 +1,5 @@
 $default-family: "Roboto", sans-serif;
+
+@mixin padding-section {
+	padding-top: 60px;
+}
