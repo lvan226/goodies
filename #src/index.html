@@ -27,7 +27,7 @@
 										<li class="hero__sidebar-item">
 											<a class="hero__link" href="#">
 												<div class="hero__link-image"
-													style="background-image: url(../img/icons/icons.svg#drinks);"></div>
+													style="background-image: url(img/icons/icons.svg#drinks);"></div>
 												<span class="hero__link-title">Напитки</span>
 												Сады придонья, кола, липтон
 											</a>
@@ -35,7 +35,7 @@
 										<li class="hero__sidebar-item">
 											<a class="hero__link" href="#">
 												<div class="hero__link-image"
-													style="background-image: url(../img/icons/icons.svg#sweets);"></div>
+													style="background-image: url(img/icons/icons.svg#sweets);"></div>
 												<span class="hero__link-title">Сладости</span>
 												Вафли, шоколад, маршмелоу
 											</a>
@@ -43,7 +43,7 @@
 										<li class="hero__sidebar-item">
 											<a class="hero__link" href="#">
 												<div class="hero__link-image"
-													style="background-image: url(../img/icons/icons.svg#chips);"></div>
+													style="background-image: url(img/icons/icons.svg#chips);"></div>
 												<span class="hero__link-title">Чипсы и лапша</span>
 												Чипсы, лапша
 											</a>
@@ -51,7 +51,7 @@
 										<li class="hero__sidebar-item">
 											<a class="hero__link" href="#">
 												<div class="hero__link-image"
-													style="background-image: url(../img/icons/icons.svg#gift-boxes);"></div>
+													style="background-image: url(img/icons/icons.svg#gift-boxes);"></div>
 												<span class="hero__link-title">Подарочные боксы</span>
 												Можно упаковать подарок
 											</a>
@@ -145,47 +145,455 @@
 				</div>
 			</div>
 
+			<!-- <Секция лидеры продаж> -->
 			<div class="sales-leaders">
 				<div class="container">
 					<div class="sales-leaders__inner">
 						<h3 class="sales-leaders__title title-medium">Лидеры продаж</h3>
 						<div class="sales-leaders__box">
 
-							<div class="sales-leaders__card">
-								<div class="sales-leaders__card-image">
-									<label class="sales-leaders__card-label">
-										<span class="sales-leaders__card-link">Перейти в избранное</span>
-										<input class="sales-leaders__card-input" type="checkbox">
-										<span class="sales-leaders__card-heart"></span>
-									</label>
-								</div>
-								<div class="sales-leaders__card-info">
-									<div class="sales-leaders__card-rating">
-										Потом звезды сверстаю
-									</div>
-									<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
-									<div class="sales-leaders__card-description">
-										Прохладительный напиток, безалкогольный
-									</div>
-									<div class="sales-leaders__card-price">45.00 руб.</div>
-								</div>
-								<div class="sales-leaders__card-btn">
-									<div class="sales-leaders__buy">Купить товар</div>
-									<div class="sales-leaders__quantity">
-										<label class="sales-leaders__quantity-label">
-											<span class="sales-leaders__quantity-text">Количество</span>
-											<input class="sales-leaders__quantity-input" type="text" placeholder="1">
-											<div class="sales-leaders__quantity-btn"></div>
+							<div class="sales-leaders__slider">
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
 										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
 									</div>
-									<a class="sales-leaders__basket-link" href="#"></a>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
 								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
 							</div>
-							
+
+
+							<div class="sales-leaders__slider">
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+								<div class="sales-leaders__card">
+									<div class="sales-leaders__card-image"
+										style="background-image: url(img/products/product-1.jpg);">
+										<label class="sales-leaders__card-label">
+											<input class="sales-leaders__card-input" type="checkbox">
+											<span class="sales-leaders__card-heart">
+												<svg class="sales-leaders__card-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="sales-leaders__card-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="sales-leaders__product-mark" href="#">
+											<span class="sales-leaders__product-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="sales-leaders__card-info">
+										<div class="sales-leaders__card-rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="sales-leaders__card-name">Dr.Pepper “Cherry”</div>
+										<div class="sales-leaders__card-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="sales-leaders__card-price">45.00 руб.</div>
+									</div>
+									<div class="sales-leaders__card-btn">
+										<div class="sales-leaders__buy sales-leaders__buy--active">Купить товар</div>
+										<div class="sales-leaders__quantity sales-leaders__quantity--active">
+											<label class="sales-leaders__quantity-label">
+												<span class="sales-leaders__quantity-text">Количество</span>
+												<input class="sales-leaders__quantity-input js-input-number" type="number"
+													placeholder="0" min="1" max="99">
+												<span class="sales-leaders__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="sales-leaders__basket-link sales-leaders__basket-link--active" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- </Секция лидеры продаж> -->
 
 
 		</main>
