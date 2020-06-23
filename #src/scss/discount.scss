@@ -1,0 +1,16 @@
+.discount {
+	@include padding-section;
+	// .discount__inner
+
+	&__inner {
+
+	}
+
+	// .discount__title
+
+	&__title {
+		padding-bottom: 0px;
+
+		text-align: center;
+	}
+}

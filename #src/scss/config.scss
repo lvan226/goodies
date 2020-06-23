@@ -59,12 +59,17 @@ img {
 	max-width: 100%;
 }
 
+:focus::placeholder {
+	color: transparent;
+	font-size: 0;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 
-	background-color: #E5E5E5;
+	background-color: #e5e5e5;
 
 	// .wrapper__header
 
