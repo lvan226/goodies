@@ -31,7 +31,7 @@ forArr(btnQuantity, 'click', function () {
 	if (Number(child.value) > 0) {
 		anc.classList.remove('card-product__quantity--active');
 	} else {
-		alert('Выбирите больше одного товара');
+		alert('Выберите больше одного товара');
 	}
 })
 
@@ -57,6 +57,7 @@ $('.discount-slider').slick({
 	prevArrow: '<button class="slick-prev slick-arrow" aria-label="Prev" type="button"></button>',
 
 });
+
 
 
 // Главная страница END
