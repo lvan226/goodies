@@ -1,10 +1,31 @@
 .discount-slider {
 	padding: 0px 232px;
 
+	@media (max-width: $elg) {
+		padding: 0px 85px;
+	}
+
+	@media (max-width: $lg) {
+		padding: 0px 150px;
+	}
+
+	@media (max-width: $sm) {
+		padding: 0px 116px;
+	}
+
+	@media (max-width: $xs) {
+		padding: 0;
+	}
+
+
 	// .discount-slider .slick-track
 
 	.slick-track {
 		padding-top: 60px;
+
+		@media (max-width: $sm) {
+			padding-top: 40px;
+		}
 	}
 
 	// .discount-slider .slick-arrow
@@ -25,6 +46,11 @@
 
 		transition: 0.35s;
 
+		@media (max-width: $sm) {
+			width: 60px;
+			height: 60px;
+		}
+
 		// .discount-slider .slick-arrow:hover
 
 		&:hover {
@@ -40,13 +66,17 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 
-			width: 16px;
+			width: 28px;
 			height: 30px;
 
 			background-image: url(../img/icons/icons.svg#discount-slider-arrow);
-			background-size: cover;
+			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
+
+			@media (max-width: $sm) {
+				width: 20px;
+			}
 		}
 	}
 
@@ -60,6 +90,10 @@
 
 	.slick-next {
 		right: 0;
+
+		@media (max-width: $elg) {
+			right: 20px;
+		}
 
 		// .discount-slider .slick-next::after
 

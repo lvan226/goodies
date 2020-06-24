@@ -2,4 +2,12 @@ $default-family: "Roboto", sans-serif;
 
 @mixin padding-section {
 	padding-top: 60px;
+
+	@media (max-width: $md) {
+		padding-top: 45px;
+	}
+
+	@media (max-width: $xs) {
+		padding-top: 30px;
+	}
 }

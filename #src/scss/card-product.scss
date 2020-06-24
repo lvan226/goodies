@@ -3,11 +3,11 @@
 	flex-direction: column;
 	width: calc(20% - 30px);
 	margin: 0 15px;
-	margin-bottom: 60px;
 
 	background: #ffffff;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+
 	// .card-product__image
 
 	&__image {
@@ -20,6 +20,14 @@
 		background-repeat: no-repeat;
 		border-top-left-radius: 15px;
 		border-top-right-radius: 15px;
+
+		@media (max-width: $xs) {
+			min-height: 200px;
+		}
+
+		@media (max-width: $minw) {
+			min-height: 140px;
+		}
 	}
 
 	// .card-product__label
@@ -158,7 +166,7 @@
 	&__mark {
 		position: absolute;
 		top: -6px;
-		right: 10px;
+		right: 15px;
 
 		display: inline-block;
 		padding: 7px 5px 7px 17px;
