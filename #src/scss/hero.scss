@@ -91,6 +91,12 @@
 		font-weight: 300;
 		text-decoration: none;
 		letter-spacing: 0.05em;
+
+		@media (max-width: $xs) {
+			padding-left: 55px;
+
+			font-size: 14px;
+		}
 	}
 
 	// .hero__link-image
@@ -103,6 +109,11 @@
 
 		width: 50px;
 		height: 50px;
+
+		@media (max-width: $xs) {
+			width: 45px;
+			height: 45px;
+		}
 	}
 
 	// .hero__link-title

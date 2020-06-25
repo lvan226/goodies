@@ -426,11 +426,6 @@ img {
           transform: translateY(-60%) rotateX(180deg);
 }
 
-.header__menu-dropdown:focus-within .header__menu-list {
-  max-height: 400px;
-  padding: 5px 10px;
-}
-
 .header__menu-dropdown:focus-within::before {
   z-index: 10;
 }
@@ -442,11 +437,6 @@ img {
 .header__menu-dropdown:hover .header__menu-title::before {
   -webkit-transform: translateY(-60%) rotateX(180deg);
           transform: translateY(-60%) rotateX(180deg);
-}
-
-.header__menu-dropdown:hover .header__menu-list {
-  max-height: 400px;
-  padding: 5px 10px;
 }
 
 .header__menu-dropdown:hover::before {
@@ -1049,6 +1039,7 @@ img {
 
 .card-product__btn-buy {
   position: absolute;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1056,9 +1047,15 @@ img {
   -webkit-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
+  display: block;
+  width: 100%;
   padding: 7px 5px;
+  font-weight: 500;
+  color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
   background-color: #4bb3ff;
+  border: none;
   cursor: pointer;
   -webkit-transition: 0.35s;
   -o-transition: 0.35s;
@@ -1282,6 +1279,7 @@ img {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 10;
   width: 70px;
   height: 70px;
   padding: 0;
@@ -1681,6 +1679,16 @@ img {
 }
 
 @media (min-width: 992px) {
+  .header__menu-dropdown:focus-within .header__menu-list {
+    max-height: 400px;
+    padding: 5px 10px;
+  }
+
+  .header__menu-dropdown:hover .header__menu-list {
+    max-height: 400px;
+    padding: 5px 10px;
+  }
+
   .header__menu-list {
     position: absolute;
     top: calc(100% + 13px);
@@ -1957,9 +1965,12 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 100%;
+    height: 100vh;
     margin: 0;
-    color: #fff !important;
-    background: #000;
+    background-image: url(../img/footer/footer-texture.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     -webkit-transition: ease-out left 0.35s;
     -o-transition: ease-out left 0.35s;
     transition: ease-out left 0.35s;
@@ -2053,6 +2064,14 @@ img {
     padding: 0 30px;
   }
 
+  .title-medium {
+    font-size: 24px;
+  }
+
+  .header__search {
+    max-width: 270px;
+  }
+
   .hero__sidebar-item {
     width: 100%;
   }
@@ -2126,6 +2145,10 @@ img {
     border-width: 1px;
   }
 
+  .footer {
+    margin-top: 60px;
+  }
+
   .footer__col {
     max-width: 100%;
     margin-bottom: 35px;
@@ -2143,8 +2166,69 @@ img {
     max-width: 100%;
   }
 
+  .header__inner > .header__search {
+    display: none;
+  }
+
+  .header__search {
+    margin: 10px auto 0;
+  }
+
+  .header__search-input {
+    padding: 11px 20px 11px 12px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
+
+  .header__search-input::-webkit-input-placeholder {
+    color: #dddddd;
+  }
+
+  .header__search-input::-moz-placeholder {
+    color: #dddddd;
+  }
+
+  .header__search-input:-ms-input-placeholder {
+    color: #dddddd;
+  }
+
+  .header__search-input::-ms-input-placeholder {
+    color: #dddddd;
+  }
+
+  .header__search-input::placeholder {
+    color: #dddddd;
+  }
+
+  .header__search-input:focus {
+    outline: none;
+  }
+
+  .header__menu-dropdown {
+    width: 100%;
+  }
+
+  .header__menu-dropdown:focus {
+    outline: none;
+  }
+
+  .header__burger {
+    margin-right: 15px;
+  }
+
   .hero {
     padding-top: 30px;
+  }
+
+  .hero__link {
+    padding-left: 55px;
+    font-size: 14px;
+  }
+
+  .hero__link-image {
+    width: 45px;
+    height: 45px;
   }
 
   .hero__content {
@@ -2188,11 +2272,34 @@ img {
   }
 
   .discount-slider {
+    max-width: 300px;
+    margin: 0 auto;
     padding: 0;
+  }
+
+  .discount-slider .slick-prev {
+    left: -20px;
+  }
+
+  .discount-slider .slick-next {
+    right: -20px;
+  }
+
+  .discount-slider__item {
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .discount-slider__product {
+    max-width: 240px;
   }
 
   .discount {
     padding-top: 30px;
+  }
+
+  .discount__inner {
+    padding: 0px 15px;
   }
 
   .home-publications {
@@ -2256,3 +2363,8 @@ img {
 }
 
 .webp .footer { background-image: url(../img/footer/footer-texture.webp); }
+
+@media (max-width: 991.98px) {
+
+  .webp .header__menu { background-image: url(../img/footer/footer-texture.webp); }
+}

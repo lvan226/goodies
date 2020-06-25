@@ -137,5 +137,9 @@ img {
 	color: #000;
 	font-weight: 400;
 	font-size: 30px;
+
+	@media (max-width: $sm) {
+		font-size: 24px;
+	}
 }
 // </КОНФИГ КЛАССОВ> =======================================

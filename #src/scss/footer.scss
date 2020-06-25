@@ -8,6 +8,10 @@
 	background-position: center;
 	background-repeat: no-repeat;
 
+	@media (max-width: $sm) {
+		margin-top: 60px;
+	}
+
 	// .footer::after
 
 	&::after {

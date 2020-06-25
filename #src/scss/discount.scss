@@ -3,7 +3,9 @@
 	// .discount__inner
 
 	&__inner {
-
+		@media (max-width: $xs) {
+			padding: 0px 15px;
+		}
 	}
 
 	// .discount__title

@@ -14,9 +14,10 @@
 	}
 
 	@media (max-width: $xs) {
+		max-width: 300px;
+		margin: 0 auto;
 		padding: 0;
 	}
-
 
 	// .discount-slider .slick-track
 
@@ -34,6 +35,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+		z-index: 10;
 
 		width: 70px;
 		height: 70px;
@@ -84,6 +86,10 @@
 
 	.slick-prev {
 		left: 0;
+
+		@media (max-width: $xs) {
+			left: -20px;
+		}
 	}
 
 	// .discount-slider .slick-next
@@ -93,6 +99,10 @@
 
 		@media (max-width: $elg) {
 			right: 20px;
+		}
+
+		@media (max-width: $xs) {
+			right: -20px;
 		}
 
 		// .discount-slider .slick-next::after
@@ -107,6 +117,11 @@
 	&__item {
 		max-width: 290px;
 		margin: 0 20px;
+
+		@media (max-width: $xs) {
+			padding: 0 15px;
+			margin: 0;
+		}
 	}
 
 	// .discount-slider__product
@@ -114,6 +129,10 @@
 	&__product {
 		width: 100%;
 		margin: 0;
+
+		@media (max-width: $xs) {
+			max-width: 240px;
+		}
 	}
 
 	// .discount-slider__image
