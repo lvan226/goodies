@@ -1,0 +1,3 @@
+$(".js-styler-select").styler({
+	
+});

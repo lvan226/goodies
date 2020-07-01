@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<meta name="description" content="Сладости - один из лучших магазинов в Беларуси по продаже товаров">
+	<title>Корзина</title>
+</head>
+
+<body>
+	<div class="wrapper footer-margin">
+		@@include('_header.html')
+
+		<main class="main wrapper__content">
+
+			<!-- Корзина -->
+			<section class="basket-page">
+				<div class="container">
+					<h2 class="basket-page__title title-large">Корзина</h2>
+
+					<div class="basket-page__inner">
+
+						<div class="basket-page__products">
+							<div class="basket-page__products-header">
+								<div class="basket-page__products-title">Ваши товары</div>
+								<label class="basket-page__allbtn-label id-styler">
+									<input class="basket-page__allbtn-checkbox id-styler__input" type="checkbox">
+									<span class="id-styler__box"></span>
+									<span class="basket-page__allbtn-text">Выбрать все</span>
+								</label>
+							</div>
+
+							<div class="basket-page__product">
+								<div class="basket-page__choice">
+									<label class="basket-page__choice-label id-styler">
+										<span class="visuallyhidden">Выбрать товар для покупки</span>
+										<input class="basket-page__choice-checkbox id-styler__input" type="checkbox">
+										<span class="id-styler__box"></span>
+									</label>
+								</div>
+								<div class="basket-page__product-image-wrapper">
+									<img class="basket-page__product-image" src="img/home-publications/product.jpg" alt="Напиток sparking со вкусом апельсина">
+								</div>
+								<div class="basket-page__product-info">
+									<div class="basket-page__product-rating">
+										<img src="img/icon-png/rating.svg" alt="">
+									</div>
+									<div class="basket-page__product-title">Ch.chups “Strawberry” </div>
+									<div class="basket-page__product-description">Прохладительный напиток, безалкогольный</div>
+									<div class="basket-page__product-text">Со вкусом - “Клубники” <span class="basket-page__product-weight-net">Масса нетто - 0,5 литров </span></div>
+								</div>
+								<div class="basket-page__quantity">
+									<button class="basket-page__quantity-btn basket-page__quantity-btn--min" aria-label="Уменьшить"></button>
+									<input type="number" class="basket-page__quantity-value" placeholder="0" aria-label="Количество товаров" min="0" max="99">
+									<button class="basket-page__quantity-btn basket-page__quantity-btn--max" aria-label="Увеличить"></button>
+								</div>
+								<div class="basket-page__price">
+									<div class="basket-page__price-number">55 руб.</div>
+									<div class="basket-page__price-quantity">1 шт</div>
+								</div>
+								<button class="basket-page__product-close" aria-label="Удалить товар из корзины"></button>
+							</div>
+
+							<div class="basket-page__product">
+								<div class="basket-page__choice">
+									<label class="basket-page__choice-label id-styler">
+										<span class="visuallyhidden">Выбрать товар для покупки</span>
+										<input class="basket-page__choice-checkbox id-styler__input" type="checkbox">
+										<span class="id-styler__box"></span>
+									</label>
+								</div>
+								<div class="basket-page__product-image-wrapper">
+									<img class="basket-page__product-image" src="img/home-publications/product.jpg" alt="Напиток sparking со вкусом апельсина">
+								</div>
+								<div class="basket-page__product-info">
+									<div class="basket-page__product-rating">
+										<img src="img/icon-png/rating.svg" alt="">
+									</div>
+									<div class="basket-page__product-title">Ch.chups “Strawberry” </div>
+									<div class="basket-page__product-description">Прохладительный напиток, безалкогольный</div>
+									<div class="basket-page__product-text">Со вкусом - “Клубники” <span class="basket-page__product-weight-net">Масса нетто - 0,5 литров </span></div>
+								</div>
+								<div class="basket-page__quantity">
+									<button class="basket-page__quantity-btn basket-page__quantity-btn--min" aria-label="Уменьшить"></button>
+									<input type="number" class="basket-page__quantity-value" placeholder="0" aria-label="Количество товаров" min="0" max="99">
+									<button class="basket-page__quantity-btn basket-page__quantity-btn--max" aria-label="Увеличить"></button>
+								</div>
+								<div class="basket-page__price">
+									<div class="basket-page__price-number">55 руб.</div>
+									<div class="basket-page__price-quantity">1 шт</div>
+								</div>
+								<button class="basket-page__product-close" aria-label="Удалить товар из корзины"></button>
+							</div>
+
+							<div class="basket-page__products-header">
+								<div class="basket-page__body">
+									<div class="basket-page__products-title">Список</div>
+									<div class="basket-page__products-subtitle">1 товар</div>
+								</div>
+								<div class="basket-page__body">
+									<div class="basket-page__body-text">Товары - 1шт</div>
+									<div class="basket-page__body-price">55 руб.</div>
+								</div>
+							</div>
+
+							<div class="basket-page__footer">
+								<div class="basket-page__footer-text">Итого к оплате:</div>
+								<div class="basket-page__footer-price">55 руб.</div>
+							</div>
+						</div>
+
+						<div class="basket-page__payment">
+							<div class="basket-page__payment-title">Введите личные данные</div>
+
+							<form class="basket-page__payment-form" action="payment.php">
+								<div class="basket-page__payment-row">
+									<input class="basket-page__payment-input" type="text" placeholder="Ваше имя" required aria-label="Введите ваше имя">
+									<input class="basket-page__payment-input" type="text" placeholder="Ваша фамилия" aria-label="Введит вашу фамилию">
+									<input class="basket-page__payment-input" type="tel" placeholder="Контактный телефон" required aria-label="Контактный телефон">
+								</div>
+								<div class="basket-page__payment-heading">Выберите способ доставки:</div>
+								<div class="basket-page__payment-row">
+									<label class="basket-page__delivery-label id-styler">
+										<input class="basket-page__delivery-radio id-styler__input" type="radio" name="delivery-method">
+										<span class="id-styler__box"></span>
+										<span class="basket-page__delivery-text">Самовывоз</span>
+									</label>
+									<label class="basket-page__delivery-label id-styler">
+										<input class="basket-page__delivery-radio id-styler__input" type="radio" name="delivery-method">
+										<span class="id-styler__box"></span>
+										<span class="basket-page__delivery-text">Другой город</span>
+									</label>
+									<label class="basket-page__delivery-label id-styler">
+										<input class="basket-page__delivery-radio id-styler__input" type="radio" name="delivery-method">
+										<span class="id-styler__box"></span>
+										<span class="basket-page__delivery-text">Курьером по&nbsp;Минску</span>
+									</label>
+								</div>
+								<label class="basket-page__payment-label">
+									<span class="basket-page__payment-heading">Выберите магазин:</span>
+									<select class="basket-page__payment-select js-styler-select" required>
+										<option value="" disabled selected>Выберите магазин</option>
+										<option value="shop-1">Первый магазин</option>
+										<option value="shop-2">Второй магазин</option>
+										<option value="shop-3">Третий магазин</option>
+									</select>
+								</label>
+								<button class="basket-page__payment-btn">Подтвердить данные</button>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- Корзина -->
+
+			<!-- <Секция скидки> -->
+			<div class="discount">
+				<div class="container">
+					<div class="discount__inner">
+						<h3 class="discount__title title-medium">Рекомендуем</h3>
+
+						<!-- discount-slider -->
+						<div class="discount-slider">
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="discount-slider__item">
+								<div class="card-product discount-slider__product">
+									<div class="card-product__image discount-slider__image" style="background-image: url(img/products/product-1.jpg);">
+										<label class="card-product__label">
+											<input class="card-product__label-input" type="checkbox">
+											<span class="card-product__label-heart">
+												<svg class="card-product__label-svg" viewBox="0 0 39 35">
+													<use xlink:href="img/icons/icons.svg#product-heart"></use>
+												</svg>
+												<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+											</span>
+										</label>
+										<a class="card-product__mark" href="#">
+											<span class="card-product__mark-decor"></span>
+											Новинка
+										</a>
+									</div>
+									<div class="card-product__info">
+										<div class="card-product__rating">
+											<img src="img/icon-png/rating.svg" alt="">
+										</div>
+										<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+										<div class="card-product__info-description">
+											Прохладительный напиток, безалкогольный
+										</div>
+										<div class="card-product__info-price">45.00 руб.</div>
+									</div>
+									<div class="card-product__btn">
+										<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+											товар</div>
+										<div class="card-product__quantity card-product__quantity--active">
+											<label class="card-product__quantity-label">
+												<span class="card-product__quantity-text">Количество</span>
+												<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+												<span class="card-product__quantity-btn"></span>
+											</label>
+										</div>
+										<a class="card-product__basket-link" href="#">Перейти
+											в
+											корзину</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /discount-slider -->
+
+					</div>
+				</div>
+			</div>
+			<!-- </Секция скидки> -->
+
+		</main>
+
+		@@include('_footer.html')
+	</div>
+
+	@@include('_scripts.html')
+</body>
+
+</html>

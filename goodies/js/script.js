@@ -118,4 +118,7 @@ $('.discount-slider').slick({
 
 // Главная страница END
 
+	$(".js-styler-select").styler({
+	
+});
 });

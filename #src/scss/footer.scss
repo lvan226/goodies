@@ -1,16 +1,10 @@
 .footer {
 	position: relative;
 
-	margin-top: 120px;
-
 	background-image: url(../img/footer/footer-texture.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
-	@media (max-width: $sm) {
-		margin-top: 60px;
-	}
 
 	// .footer::after
 

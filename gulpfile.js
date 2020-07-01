@@ -73,6 +73,7 @@ function css() {
 	var firstPath = src([
 		"node_modules/normalize.css/normalize.css",
 		"node_modules/slick-carousel/slick/slick.css",
+		"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
 	])
 	.pipe(concat("libs.min.css"))
 	.pipe(clean_css())
@@ -111,6 +112,7 @@ function js() {
 		'node_modules/focus-within-polyfill/dist/focus-within-polyfill.js',
 		'' + source_folder + '/js/libs.js',
 		'node_modules/slick-carousel/slick/slick.min.js',
+		'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js'
 	])
 	.pipe(fileinclude())
 	.pipe(uglify())

@@ -3,4 +3,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	@@include('main-page.js')
 
+	@@include('basket.js')
 });
