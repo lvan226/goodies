@@ -3446,6 +3446,83 @@ img {
   border-radius: 15px;
 }
 
+.faq-page {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.faq-page__title {
+  margin-bottom: 30px;
+}
+
+.faq-page__tab {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.faq-page__tab--active .faq-page__tab-title::after {
+  -webkit-transform: translateY(-50%) rotateX(180deg);
+          transform: translateY(-50%) rotateX(180deg);
+}
+
+.faq-page__tab--active .faq-page__tab-text {
+  max-height: 1000px;
+  padding: 10px 25px;
+}
+
+.faq-page__tab + .faq-page__tab {
+  margin-top: 30px;
+}
+
+.faq-page__tab-title {
+  position: relative;
+  margin: 0;
+  padding: 17px 55px 17px 25px;
+  color: #2f2f2f;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.faq-page__tab-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 36px;
+  height: 18px;
+  background-image: url(../img/icons/icons.svg#t-arrow-down);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faq-page__tab-text {
+  max-height: 0;
+  margin: 0;
+  padding: 0 25px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-transition: 0.35s;
+  -o-transition: 0.35s;
+  transition: 0.35s;
+}
+
 @media (min-width: 576px) {
   .home-publications__box {
     padding: 50px 30px;
@@ -4081,6 +4158,10 @@ img {
 
   .contact-page__map-content {
     min-height: 320px;
+  }
+
+  .faq-page {
+    padding-top: 45px;
   }
 }
 
@@ -4809,6 +4890,23 @@ img {
 
   .contact-page__title {
     text-align: center;
+  }
+
+  .faq-page {
+    padding-top: 30px;
+  }
+
+  .faq-page__tab--active .faq-page__tab-text {
+    padding: 10px;
+  }
+
+  .faq-page__tab-title {
+    padding: 12px 10px;
+    font-size: 18px;
+  }
+
+  .faq-page__tab-text {
+    padding: 0 10px;
   }
 }
 

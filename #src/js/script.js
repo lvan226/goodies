@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	@@include('catalog.js')
 	
+	@@include('faq.js')
 });
