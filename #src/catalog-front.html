@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<meta name="description" content="Сладости - один из лучших магазинов в Беларуси по продаже товаров">
+	<title>Каталог товаров</title>
+</head>
+
+<body>
+	<div class="wrapper footer-margin">
+		@@include('_header.html')
+
+		<main class="main wrapper__content">
+
+			<!-- Страница каталога -->
+			<div class="catalog">
+				<div class="container">
+					<div class="catalog__inner">
+						<div class="catalog__filters">
+							<div class="catalog__filters-title">Категории</div>
+
+							<ul class="catalog__category-list">
+								<li class="catalog__category-item catalog__category-item--active">
+									<a class="catalog__link" href="#">
+										<div class="catalog__link-image" style="background-image: url(img/icons/icons.svg#sweets);"></div>
+										<span class="catalog__link-text">Сладости</span>
+									</a>
+									<ul class="catalog__type-list">
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Печенье, вафли, бисквит</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Шоколад, батончики</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Желатинки, конфеты</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Маршмелоу</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Жевательные резинки</span>
+											</label>
+										</li>
+									</ul>
+								</li>
+								<li class="catalog__category-item">
+									<a class="catalog__link" href="#">
+										<div class="catalog__link-image" style="background-image: url(img/icons/icons.svg#drinks);"></div>
+										<span class="catalog__link-text">Напитки</span>
+									</a>
+									<ul class="catalog__type-list">
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Печенье, вафли, бисквит</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Шоколад, батончики</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Желатинки, конфеты</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Маршмелоу</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Жевательные резинки</span>
+											</label>
+										</li>
+									</ul>
+								</li>
+								<li class="catalog__category-item">
+									<a class="catalog__link" href="#">
+										<div class="catalog__link-image" style="background-image: url(img/icons/icons.svg#chips);"></div>
+										<span class="catalog__link-text">Чипсы и лапша</span>
+									</a>
+									<ul class="catalog__type-list">
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Печенье, вафли, бисквит</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Шоколад, батончики</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Желатинки, конфеты</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Маршмелоу</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Жевательные резинки</span>
+											</label>
+										</li>
+									</ul>
+								</li>
+								<li class="catalog__category-item">
+									<a class="catalog__link" href="#">
+										<div class="catalog__link-image" style="background-image: url(img/icons/icons.svg#gift-boxes);"></div>
+										<span class="catalog__link-text">Подарочные боксы</span>
+									</a>
+									<ul class="catalog__type-list">
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Печенье, вафли, бисквит</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Шоколад, батончики</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Желатинки, конфеты</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Маршмелоу</span>
+											</label>
+										</li>
+										<li class="catalog__type-item">
+											<label class="id-styler">
+												<input class="id-styler__input" type="checkbox" name="type-1">
+												<span class="id-styler__box"></span>
+												<span class="catalog__type-text">Жевательные резинки</span>
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<button class="catalog__apply">Применить</button>
+							<button class="catalog__reset">Сбросить</button>
+						</div>
+
+						<div class="catalog__content">
+							<div class="catalog__box">
+								<h2 class="catalog__title">
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#chips);">
+									</span>
+									<span class="catalog__title-text">Чипсы и лапша</span>
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#chips);">
+									</span>
+								</h2>
+								<div class="catalog__slider">
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+								<a class="catalog__content-link" href="#">Посмотреть еще</a>
+							</div>
+
+							<div class="catalog__box">
+								<h2 class="catalog__title">
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#drinks);">
+									</span>
+									<span class="catalog__title-text">Напитки</span>
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#drinks);">
+									</span>
+								</h2>
+								<div class="catalog__slider">
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+								</div>
+
+								<a class="catalog__content-link" href="#">Посмотреть еще</a>
+							</div>
+
+							<div class="catalog__box">
+								<h2 class="catalog__title">
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#gift-boxes);">
+									</span>
+									<span class="catalog__title-text">Подарочные боксы</span>
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#gift-boxes);">
+									</span>
+								</h2>
+								<div class="catalog__slider">
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+								</div>
+
+								<a class="catalog__content-link" href="#">Посмотреть еще</a>
+							</div>
+
+							<div class="catalog__box">
+								<h2 class="catalog__title">
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#sweets);">
+									</span>
+									<span class="catalog__title-text">Сладости</span>
+									<span class="catalog__title-image" style="background-image: url(img/icons/icons.svg#sweets);">
+									</span>
+								</h2>
+								<div class="catalog__slider">
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="card-product catalog__card">
+										<div class="card-product__image catalog__card-image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+								</div>
+
+								<a class="catalog__content-link" href="#">Посмотреть еще</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Страница каталога END-->
+
+		</main>
+
+		@@include('_footer.html')
+	</div>
+
+	@@include('_scripts.html')
+</body>
+
+</html>

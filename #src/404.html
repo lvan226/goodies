@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<meta name="description" content="Сладости - один из лучших магазинов в Беларуси по продаже товаров">
+	<title>Страница не найдена...</title>
+</head>
+
+<body>
+	<div class="wrapper footer-margin">
+		@@include('_header.html')
+
+		<main class="main wrapper__content">
+
+			<!-- Страница 404 -->
+			<div class="page-404">
+				<div class="container">
+					<div class="page-404__inner">
+						<div class="page-404__info">
+							<div class="page-404__title">
+								Упс... Что-то пошло не так<b class="page-404__title-selected">!?</b>
+							</div>
+							<div class="page-404__subtitle">
+								Страница не найдена :(
+							</div>
+							<p class="page-404__text">
+								Скорее всего данной старницы не существует, либо вы ввели неверный запрос или ссылку, вернитесь на главную страницу для выполнения дальнейших действий.
+							</p>
+							<a class="page-404__link-home" href="index.html">ВЕРУНТЬСЯ НА ГЛАВНУЮ СТРАНИЦУ</a>
+						</div>
+
+						<div class="page-404__image-wrapper">
+							<img class="page-404__image" src="img/404/404-img.png" alt="Человек держит в руках лампу, а под лампой вертикально рассположенны цифры 4 0 4">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Страница 404 END-->
+
+		</main>
+
+		@@include('_footer.html')
+	</div>
+
+	@@include('_scripts.html')
+</body>
+
+</html>

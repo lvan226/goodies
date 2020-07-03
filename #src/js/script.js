@@ -4,4 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	@@include('main-page.js')
 
 	@@include('basket.js')
+
+	@@include('product-one.js')
+	
+	@@include('catalog.js')
+	
 });

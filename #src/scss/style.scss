@@ -8,6 +8,7 @@
 	}
 }
 
+
 @import "fonts";
 @import "vars";
 @import "config";
@@ -19,6 +20,12 @@
 @import "discount";
 @import "home-publications";
 @import "footer";
-@import "libs/checkbox.scss";
+@import "libs/checkbox";
 @import "basket-page";
-@import "publication-page.scss";
+@import "publication-page";
+@import "page-404";
+@import "breadcrumbs";
+@import "publication-one";
+@import "product-one";
+@import "catalog";
+@import "order-status";
