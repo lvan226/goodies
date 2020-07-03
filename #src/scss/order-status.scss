@@ -1,0 +1,164 @@
+.order-status {
+	@include padding-section;
+	// .order-status__inner
+
+	&__inner {
+	
+	}
+
+	// .order-status__title
+
+	&__title {
+		margin-bottom: 60px;
+		@media (max-width: $xs) {
+			margin-bottom: 30px;
+
+			text-align: center;
+		}
+	}
+
+	// .order-status__box
+
+	&__box {
+		margin-bottom: 60px;
+		padding: 20px 20px 40px;
+
+		background: #ffffff;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+		border-radius: 15px;
+
+		@media (max-width: $sm) {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .order-status__box-title
+
+	&__box-title {
+		margin: 0;
+		padding: 0 0 25px 35px;
+
+		color: #2f2f2f;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 26px;
+		letter-spacing: 0.1em;
+
+		border-bottom: 1px solid #e2e2e2;
+
+		@media (max-width: $sm) {
+			padding-left: 0px;
+		}
+
+		@media (max-width: $xs) {
+			font-size: 18px;
+		}
+	}
+
+	// .order-status__item-wrapper
+
+	&__item-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		padding: 0 0 30px 35px;
+
+		border-bottom: 1px solid #e2e2e2;
+
+		@media (max-width: $sm) {
+			padding-left: 0px;
+		}
+	}
+
+	// .order-status__item
+
+	&__item {
+		display: flex;
+		align-items: center;
+		width: calc(33.333% - 20px);
+		margin: 25px 10px 0;
+
+		@media (max-width: $lg) {
+			width: calc(50% - 20px);
+		}
+
+		@media (max-width: $sm) {
+			width: 100%;
+		}
+	}
+
+	// .order-status__image-wrapper
+
+	&__image-wrapper {
+		width: 160px;
+		height: 115px;
+		margin-right: 20px;
+		overflow: hidden;
+
+		border-radius: 15px;
+
+		@media (max-width: $md) {
+			width: 120px;
+			height: 90px;
+			margin-right: 12px;
+		}
+	}
+
+	// .order-status__image
+
+	&__image {
+		height: 100%;
+
+		object-fit: cover;
+
+		transition: 0.35s;
+
+		// .order-status__image:hover
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	// .order-status__info
+
+	&__info {
+	}
+
+	// .order-status__info-number
+
+	&__info-number {
+		margin-bottom: 5px;
+
+		color: #000000;
+		font-weight: 400;
+		font-size: 20px;
+
+		@media (max-width: $xs) {
+			font-size: 14px;
+		}
+	}
+
+	// .order-status__info-date
+
+	&__info-date {
+		color: #000000;
+		font-weight: 300;
+		font-size: 20px;
+	}
+
+	// .order-status__info-status
+
+	&__info-status {
+		display: inline-block;
+
+		color: #4bb3ff;
+		font-weight: 300;
+		font-size: 20px;
+
+		border-bottom: 1px solid #4bb3ff;
+	}
+}
+.container {
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<meta name="description" content="Сладости - один из лучших магазинов в Беларуси по продаже товаров">
+	<title>Профиль</title>
+</head>
+
+<body>
+	<div class="wrapper footer-margin">
+		@@include('_header.html')
+
+		<main class="main wrapper__content">
+
+			<!-- Страница профиля -->
+			<div class="profile-page">
+				<div class="container">
+					<h2 class="profile-page__title title-large">Мой профиль</h2>
+					<div class="profile-page__inner">
+						<nav class="profile-page__nav">
+							<div class="profile-page__avatar-wrapper">
+								<img class="profile-page__avatar" src="img/profile-test.jpg" alt="Картинка профиля">
+							</div>
+							<div class="profile-page__name">Bs11009478521</div>
+							<ul class="profile-page__list">
+								<li class="profile-page__item"><a class="profile-page__link" href="profile.html">Мой профиль</a></li>
+								<li class="profile-page__item"><a class="profile-page__link" href="basket.html">Корзина</a></li>
+								<!-- <li class="profile-page__item"><a class="profile-page__link" href="#">Личные данные</a></li> -->
+								<li class="profile-page__item"><a class="profile-page__link" href="order-status.html">История заказов</a></li>
+								<li class="profile-page__item"><a class="profile-page__link profile-page__link--active" href="profile-favorites.html">Избранное</a></li>
+								<li class="profile-page__item"><button class="profile-page__exit">Выход</button></li>
+							</ul>
+						</nav>
+						<div class="profile-page__content">
+							<div class="profile-favorites">
+								<h3 class="profile-favorites__title">Избранное</h3>
+								<div class="profile-favorites__subtitle">Понравившиеся товары</div>
+								<div class="profile-favorites__box">
+
+									<div class="card-product profile-favorites__card">
+										<div class="card-product__image" style="background-image: url(img/products/product-1.jpg);">
+											<label class="card-product__label">
+												<input class="card-product__label-input" type="checkbox">
+												<span class="card-product__label-heart">
+													<svg class="card-product__label-svg" viewBox="0 0 39 35">
+														<use xlink:href="img/icons/icons.svg#product-heart"></use>
+													</svg>
+													<a class="card-product__label-link" href="favorites.html">Перейти в избранное</a>
+												</span>
+											</label>
+											<a class="card-product__mark" href="#">
+												<span class="card-product__mark-decor"></span>
+												Новинка
+											</a>
+										</div>
+										<div class="card-product__info">
+											<div class="card-product__rating">
+												<img src="img/icon-png/rating.svg" alt="">
+											</div>
+											<div class="card-product__info-name">Dr.Pepper “Cherry”</div>
+											<div class="card-product__info-description">
+												Прохладительный напиток, безалкогольный
+											</div>
+											<div class="card-product__info-price">45.00 руб.</div>
+										</div>
+										<div class="card-product__btn">
+											<div class="card-product__btn-buy card-product__btn-buy--active">Купить
+												товар</div>
+											<div class="card-product__quantity card-product__quantity--active">
+												<label class="card-product__quantity-label">
+													<span class="card-product__quantity-text">Количество</span>
+													<input class="card-product__quantity-input js-input-number" type="number" placeholder="0" min="1" max="99">
+													<span class="card-product__quantity-btn"></span>
+												</label>
+											</div>
+											<a class="card-product__basket-link" href="#">Перейти
+												в
+												корзину</a>
+										</div>
+									</div>
+
+									<div class="profile-favorites__none">Больше товаров нет</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Страница профиля END -->
+
+		</main>
+
+		@@include('_footer.html')
+	</div>
+
+	@@include('_scripts.html')
+</body>
+
+</html>

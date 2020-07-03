@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	@@include('_links.html')
+	<meta name="description" content="Сладости - один из лучших магазинов в Беларуси по продаже товаров">
+	<title>Профиль</title>
+</head>
+
+<body>
+	<div class="wrapper footer-margin">
+		@@include('_header.html')
+
+		<main class="main wrapper__content">
+
+			<!-- Страница профиля -->
+			<div class="profile-page">
+				<div class="container">
+					<h2 class="profile-page__title title-large">Мой профиль</h2>
+					<div class="profile-page__inner">
+						<nav class="profile-page__nav">
+							<div class="profile-page__avatar-wrapper">
+								<img class="profile-page__avatar" src="img/profile-test.jpg" alt="Картинка профиля">
+							</div>
+							<div class="profile-page__name">Bs11009478521</div>
+							<ul class="profile-page__list">
+								<li class="profile-page__item"><a class="profile-page__link profile-page__link--active" href="profile.html">Мой профиль</a></li>
+								<li class="profile-page__item"><a class="profile-page__link" href="basket.html">Корзина</a></li>
+								<!-- <li class="profile-page__item"><a class="profile-page__link" href="#">Личные данные</a></li> -->
+								<li class="profile-page__item"><a class="profile-page__link" href="order-status.html">История заказов</a></li>
+								<li class="profile-page__item"><a class="profile-page__link" href="profile-favorites.html">Избранное</a></li>
+								<li class="profile-page__item"><button class="profile-page__exit">Выход</button></li>
+							</ul>
+						</nav>
+						<div class="profile-page__content">
+							<div class="profile-page__data-wrapper">
+								<div class="profile-page__data-title">Личные данные</div>
+								<div class="profile-page__data-line">
+									<div class="profile-page__data-key">Имя:</div>
+									<div class="profile-page__data-value">Дмитрий</div>
+								</div>
+								<div class="profile-page__data-line">
+									<div class="profile-page__data-key">Фамилия:</div>
+									<div class="profile-page__data-value">Дмитриев</div>
+								</div>
+								<div class="profile-page__data-line">
+									<div class="profile-page__data-key">Телефон</div>
+									<div class="profile-page__data-value">+ 375 ******* 36</div>
+								</div>
+								<div class="profile-page__data-line">
+									<div class="profile-page__data-key">Соц. сеть</div>
+									<div class="profile-page__data-value">https//vk.com/id*********</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Страница профиля END -->
+
+		</main>
+
+		@@include('_footer.html')
+	</div>
+
+	@@include('_scripts.html')
+</body>
+
+</html>
